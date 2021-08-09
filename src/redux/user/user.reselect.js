@@ -1,5 +1,4 @@
 import { createSelector } from "reselect";
-import { selectCartItems } from "../cart/cart.selectors";
 
 const selectUser = state => state.user;
 

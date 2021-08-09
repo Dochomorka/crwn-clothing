@@ -3,6 +3,9 @@ import './checkout-item.styles.scss';
 
 import {connect} from 'react-redux';
 import { clearItemFromCart , addItem, removeItem} from '../../redux/cart/cart.actions';
+import RemoveCircleOutlineOutlinedIcon from '@material-ui/icons/RemoveCircleOutlineOutlined';
+import ArrowForwardIosOutlinedIcon from '@material-ui/icons/ArrowForwardIosOutlined';
+import ArrowBackIosOutlinedIcon from '@material-ui/icons/ArrowBackIosOutlined';
 
 
 const CheckoutItem = ({cartItem, clearItem, addItem, removeItem}) => {
@@ -16,18 +19,20 @@ const CheckoutItem = ({cartItem, clearItem, addItem, removeItem}) => {
         <span className="quantity">
             <span>
                 <div className="arrow" onClick={() => removeItem(cartItem)}>
-                    &#10094;
+                    <ArrowBackIosOutlinedIcon/>
                 </div>
             </span>
             <span className="value">{quantity}</span>
             <span>
                 <div className="arrow" onClick={() => addItem(cartItem)}>
-                    &#10095;
+                    <ArrowForwardIosOutlinedIcon/>
                 </div>
             </span>
             </span>
         <span className="price">{price}</span>
-        <span className="remove-button" onClick={() => clearItem(cartItem)}>&#10005;</span>
+        <span className="remove-button" onClick={() => clearItem(cartItem)}>
+            <RemoveCircleOutlineOutlinedIcon/>
+        </span>
     </div>)
 }
 
