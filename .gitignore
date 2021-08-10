@@ -11,6 +11,9 @@
 # production
 /build
 
+# stripe publish key and secrete key
+/stripe
+
 # misc
 .DS_Store
 .env.local
