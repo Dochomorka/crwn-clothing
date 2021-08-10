@@ -1,0 +1,4 @@
+const PUBLISHABLE_KEY = "pk_test_51JMvmPCisygg55vQwOvcsg0XwQxm2ak7JqzsQVGcfWG8la5voDr8oKXnucj16J7QuzzxFM3FpthZdrGmJQRHCwCp006T0DkNlw";
+const SEKERET_KEY = "";
+
+export {PUBLISHABLE_KEY, SEKERET_KEY}
